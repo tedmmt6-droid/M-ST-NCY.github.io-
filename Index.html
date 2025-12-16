@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M-STNCY - Équipement Électronique & Maison</title>
+  <style>
+    /* RESET DE BASE */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background-color: #f4f4f4; color: #333; line-height: 1.6; }
+
+    header { background-color: #0d3b66; color: #fff; padding: 20px 0; text-align: center; }
+    header img { max-width: 150px; margin-bottom: 10px; }
+    header h1 { font-size: 2rem; }
+
+    nav { background-color: #145da0; }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: #fff; text-decoration: none; padding: 15px 0; display: block; }
+    nav ul li a:hover { text-decoration: underline; }
+
+    .container { max-width: 1100px; margin: 20px auto; padding: 0 20px; }
+
+    section { margin-bottom: 40px; }
+
+    .products { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .product-card { background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px; width: 250px; text-align: center; }
+    .product-card img { max-width: 100%; border-radius: 5px; }
+    .product-card h3 { margin: 10px 0; }
+    .product-card p { font-size: 0.9rem; color: #666; }
+    .product-card span { font-weight: bold; color: #0d3b66; }
+
+    .contact-form { background-color: #fff; padding: 20px; border-radius: 8px; max-width: 600px; margin: auto; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    .contact-form button { background-color: #0d3b66; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; }
+    .contact-form button:hover { background-color: #145da0; }
+
+    footer { background-color: #0d3b66; color: #fff; text-align: center; padding: 15px 0; }
+
+    @media(max-width:768px){
+      nav ul { flex-direction: column; }
+      .products { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo M-STNCY">
+    <h1>M-STNCY</h1>
+    <p>Équipement Électronique & Maison - Propriétaire: Stancy Malelo</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#products">Produits</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section id="home">
+      <h2>Bienvenue chez M-STNCY</h2>
+      <p>Découvrez nos équipements électroniques et articles pour la maison. Naviguez dans notre catalogue et contactez-nous pour plus d'informations.</p>
+    </section>
+
+    <section id="products">
+      <h2>Nos Produits</h2>
+      <div class="products">
+        <!-- Produits à ajouter plus tard -->
+        <p>Aucun produit disponible pour le moment. Revenez bientôt !</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <div class="contact-form">
+        <form action="mailto:contact@mstncy.cd" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre email" required>
+          <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 M-STNCY - Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
